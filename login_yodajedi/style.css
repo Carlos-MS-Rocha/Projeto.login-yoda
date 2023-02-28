@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+body{
+    background-image: url(assets/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+   background-color: #375054;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 80px;
+    
+}
+
+main{
+    
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    
+}
+
+.cabecalho{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho span{
+    color: #a9db60;
+}
+
+.cabecalho img{
+    width: 90px;
+    height: auto;
+}
+
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    
+    
+}
+
+.menu ul li a{
+    color: #a9db60;
+    margin-left: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+
+/*seção de login*/
+.container_login{
+    background-color: #a9db60;
+    opacity: 80%;
+    border-radius: 20px;
+    width: 400px;
+    margin-top: 10px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    z-index: 5;
+    
+   
+    
+}
+
+.container_login h1{
+    font-size: 20px;
+    color: #081f2f;
+}
+.container_login span{
+    font-size: 30px;
+    color: #081f2f;
+    
+}
+
+
+form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+label, input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label{
+    font-weight: bold;
+    color: #081f2f;
+}
+
+input{
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #081f2f;
+}
+
+input:hover{
+    border: 2px solid #375054;
+}
+
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#forgot-pass{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #081f2f;
+}
+
+input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+input[type="submit"]:focus{
+    background-color: #081f2f;
+    color: white;
+    transition: .5s all;
+}
+
+.social_media p{
+    margin-bottom: 20px;
+}
+
+.social_media i{
+    width: 40px;
+    height: 40px;  
+    color: white;  
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.fa-facebook-f{
+    background-color: #385998;
+    
+}
+
+
+.fa-instagram{
+background-color: #400191;
+
+}
+
+
+footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 95%;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+/*botão-modal*/
+
+
+
+.modal-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    z-index: 99999999;
+  
+  
+  }
+  
+  .modal-container.show{
+      pointer-events: auto;
+      opacity: 1;
+      display: flex;
+  }
+  
+
+.modal{
+    background-color: white;
+    width: 400px;
+    height: 260px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: -1%;
+    margin-top: 10%;
+    
+    
+
+}
+
+.modal h1{
+    font-size: 20px;
+    color: #081f2f;
+    margin-bottom: 10px;
+}
+
+.modal p{
+    font-size: 15px;
+    color:#375054;
+}
+
+#open{
+
+    position: absolute;
+    right: 0  auto;
+    top: 0 auto;
+    bottom: 0 auto;
+    left: 0 auto;
+
+    background-color: #a9db60;
+    color: #081f2f;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px black;
+    font-size: 14px;
+    padding: 10px;   
+    cursor: pointer;
+    
+}
+
+#open:hover{
+    background-color: #375054;
+    color: #081f2f;
+
+}
+
+#close{
+    background-color: #375054;
+    color: #081f2f;
+    width: 30px;
+    border-radius: 5px;
+    
+}
+
+#close:hover{
+    background-color: #081f2f;
+    color: #375054;
+
+}
